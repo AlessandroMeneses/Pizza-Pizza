@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right bottom, #2d4d7c, #00759e, #009c9f, #40be85, #b5d666);;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      .order {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        text-align: center;
+        width: 300px;
+        background-color: #ffffffae;
+      }
+      
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      
+      label {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        padding-top: 10px;
+      }
+      
+      input[type="email"],
+      input[type="password"] {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: block;
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+      }
+      
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        outline: none;
+        box-shadow: 0 0 2px 1px #0000d4;
+      }
+      
+      .ord {
+        margin-left: 250;
+          background: #000000;
+          color: #ffffff;
+          border: 2px solid #416c74;
+          padding: 8px 90px;
+          border-radius: 3px;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          display: inline-block;
+        }
+        .ord:hover {
+          color: #030303;
+        }
+        .ord::after {
+          content: "";
+          background: #08d6ad; 
+          position: absolute;
+          z-index: -1;
+          padding: 16px 20px;
+          display: block;
+          left: -15%;
+          right: -30%;
+          top: 0;
+          bottom: 0;
+          transform: skewX(-45deg) scale(0, 1);
+          transition: all 0.3s ease;
+        }
+        .ord:hover::after {
+          transition: all 0.3s ease-out;
+          transform: skewX(-45deg) scale(1, 1);
+        }
+      
+      p {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+      }
+      
+      p a {
+        color: #3700b8;
+        text-decoration: none;
+      }
+      
+      p a:hover {
+        text-decoration: underline;
+      }
+      
+      @media (max-width: 480px) {
+        .order{
+          width: 100%;
+        }
+      }
+
+      #lista{
+        text-align: left;
+      }
+
+      .ord{
+        margin-top: 10px;
+
+      }
+
+</style>
+  <body>
+    <div class="order">
+      <h1>Jamon y queso</h1>
+      <form>
+        <h4>Ingredientes</h4>
+        <p>
+            <ul id="lista">
+                <li>Masa de arina</li>
+                <li>Salsa de tomate</li>
+                <li>Queso mozzarella rallado</li>
+                <li>Jamón</li><br>
+                <li>$20.00</li>
+            </ul>
+        </p>
+        <label for="">Tu nombre</label>
+        <input type="text" id="email" name="email" required>
+        <label for="password">Tu contacto</label>
+        <input type="text" id="password" name="password" required>
+        <label for="password">Tu Direccion</label>
+        <input type="text" id="password" name="password" required>
+        <button class="ord" type="submit" onclick="mostrar">Ordenar</button>
+      </form>
+    </div>
+      </form>
+  </body>
+
+  </script>
+</html>
